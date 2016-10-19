@@ -3,35 +3,11 @@
 <head> 
 <meta charset="utf-8"> 
 <title>Weather</title> 
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.js">
-</script> 
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.js"></script> 
+<link rel="stylesheet" type="text/css" href="style.css">
 </head> 
 <body> 
-<style>
 
-.button 
-{
-	background-color: #008CBA;
-    border: none;
-    color: white;
-    padding: 16px 120px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    transition-duration: 0.4s;
-    cursor: pointer;
-	border: 1px solid #008CBA;
-}
-
-.button:hover 
-{
-    background-color: white; 
-    color: black; 
-    border: 1px solid #008CBA;
-}
-</style>
 <center>
 <h1>Weather Super App</h1>
 <h2>Enter city:</h2>
@@ -41,13 +17,17 @@
 </br>
 </form> 
 </br>
+
 <div id="result"></div> 
+<div id="image"></div>
+<img src="http://localhost/wpf/img/0.png" alt="WHERE_IS_MY_PICTURE?">
 
 <script type="text/javascript"> 
 function post() 
 { 
 var name = $('#name').val(); 
 $.post('return.php',{postname:name}, function(data){ $('#result').html(data); }); 
+$.post('image.php',{postname:name}, function(data){ $('#image').html(data); }); 
 } 
 </script> 
 </body> 

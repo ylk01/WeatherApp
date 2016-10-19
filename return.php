@@ -1,6 +1,6 @@
 <?PHP
 
-//error_reporting(E_ERROR | E_WARNING | E_PARSE);
+error_reporting(E_WARNING);
 
 /*$img = 'http://localhost/wpf/13.png';
 header('Content-Type: image/png');
