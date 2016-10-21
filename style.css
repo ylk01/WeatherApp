@@ -1,6 +1,6 @@
 .button 
 {
-	background-color: #008CBA;
+	background-color: #00802b;
     border: none;
     color: white;
     padding: 16px 120px;
@@ -11,12 +11,37 @@
     margin: 4px 2px;
     transition-duration: 0.4s;
     cursor: pointer;
-	border: 1px solid #008CBA;
+	border: 1px solid #00802b;
 }
 
 .button:hover 
 {
     background-color: white; 
     color: black; 
-    border: 1px solid #008CBA;
+    border: 1px solid #00802b;
+}
+body {
+    background-image: url("http://localhost/wpf/img/background.jpg");
+    background-color: #cccccc;
+}
+h1 {
+    color: white;
+	font-family: Calibri;
+}
+h2 {
+    color: white;
+	font-family: Calibri;
+}
+#result
+{
+	position: absolute;
+    left: 950px;
+	top: 350px;
+	
+}
+#image
+{
+	position: absolute;
+    left: 650px;
+	top: 450px;
 }

@@ -14,16 +14,22 @@ $data = json_decode($json);
 
 $descr = $data->weather[0]->description;
 
-if ($descr == "scattered clouds")
-{echo "http://localhost/wpf/13.png";}
-elseif ($descr == "broken clouds")
-{echo "http://localhost/wpf/10.png";}
+if ($descr == "overcast clouds")
+{echo '<img src="http://localhost/wpf/img/28.png"/>';}
+
+elseif ($descr == "scattered clouds")
+{echo '<img src="http://localhost/wpf/img/28.png"/>';}
+
 elseif ($descr == "clear sky")
-{echo "http://localhost/wpf/10.png";}
+{echo '<img src="http://localhost/wpf/img/32.png"/>';}
+
+elseif ($descr == "broken clouds")
+{echo '<img src="http://localhost/wpf/img/28.png"/>';}
+
+elseif ($descr == "light rain")
+{echo '<img src="http://localhost/wpf/img/11.png"/>';}
+
 else
-{echo "http://localhost/wpf/0.png";}
-
-echo $descr;
-
+{echo '<img src="http://localhost/wpf/img/na.png"/>';}
 
 ?>
