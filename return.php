@@ -2,10 +2,6 @@
 
 error_reporting(E_WARNING);
 
-/*$img = 'http://localhost/wpf/13.png';
-header('Content-Type: image/png');
-readfile($img);*/
-
 $city = $_POST['postname'];
 
 $json = file_get_contents("http://api.openweathermap.org/data/2.5/weather?q='.$city.'&APPID=7f759089493b563470025ff8e11b88c9");
